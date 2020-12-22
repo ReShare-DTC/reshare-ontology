@@ -48,13 +48,13 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:isDefinedBy rdf:resource="http://smangel.gitlab.io/reshare-ontology/0.1/"/>
     <rdfs:domain rdf:resource="http://smangel.gitlab.io/reshare-ontology/0.1/DTC"/>
-    <rdfs:range rdf:resource="http://smangel.gitlab.io/reshare-ontology/0.1/Identity"/>
+    <rdfs:range rdf:resource="http://smangel.gitlab.io/reshare-ontology/0.1/Sender"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://smangel.gitlab.io/reshare-ontology/0.1/receiver" rdfs:label="receiver" rdfs:comment="The data receiver of the underlying transmission of a DTC." vs:term_status="unstable">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:isDefinedBy rdf:resource="http://smangel.gitlab.io/reshare-ontology/0.1/"/>
     <rdfs:domain rdf:resource="http://smangel.gitlab.io/reshare-ontology/0.1/DTC"/>
-    <rdfs:range rdf:resource="http://smangel.gitlab.io/reshare-ontology/0.1/Identity"/>
+    <rdfs:range rdf:resource="http://smangel.gitlab.io/reshare-ontology/0.1/Receiver"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://smangel.gitlab.io/reshare-ontology/0.1/senderSig" rdfs:label="sender signature" rdfs:comment="The contract signature created by the sender of the DTC." vs:term_status="unstable">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
