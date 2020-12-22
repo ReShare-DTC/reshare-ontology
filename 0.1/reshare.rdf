@@ -44,13 +44,6 @@
   </rdfs:Class>
 
   <!-- ReShare properties (relationships) -->
-  <rdf:Property rdf:about="http://example.com/ontologies/reshare/0.1/ABCpath" rdfs:label="ABClabel" rdfs:comment="ABCcomment" vs:term_status="unstable">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:isDefinedBy rdf:resource="http://example.com/ontologies/reshare/0.1/"/>
-    <rdfs:domain rdf:resource="ABCdomain"/>
-    <rdfs:range rdf:resource="ABCrange"/>
-  </rdf:Property>
-
   <rdf:Property rdf:about="http://example.com/ontologies/reshare/0.1/sender" rdfs:label="sender" rdfs:comment="The data source (sender) of the underlying transmission of a DTC." vs:term_status="unstable">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:isDefinedBy rdf:resource="http://example.com/ontologies/reshare/0.1/"/>

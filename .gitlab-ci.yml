@@ -13,7 +13,7 @@ pages:
   - echo "Creating documentation..."
   - mkdir doc
   - mv widoco-1.4.14-jar-with-dependencies-selfbuilt.jar widoco.jar
-  - java -jar widoco.jar -ontFile reshare.rdf -outFolder doc -webVowl -uniteSections -rewriteAll
+  - java -jar widoco.jar -ontFile reshare.rdf -outFolder doc -webVowl -uniteSections -rewriteAll -excludeIntroduction
   - mv doc/doc/index-en.html doc/doc/index.html
 
   - echo "Copying results to /public for publishing..."
