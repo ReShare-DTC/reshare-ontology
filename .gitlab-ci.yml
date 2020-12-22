@@ -1,0 +1,26 @@
+image: ruby:2.7
+
+pages:
+  stage: deploy
+  only:
+    - tags
+  script:
+  - mkdir public
+  - echo "Installing Java..."
+  - apt-get update
+  - apt-get -y install default-jdk
+
+  - echo "Creating documentation..."
+  - mkdir doc
+  - wget https://github.com/dgarijo/Widoco/releases/download/v1.4.14/widoco-1.4.14-jar-with-dependencies.jar -O widoco.jar
+  - java -jar widoco.jar -ontFile foaf.rdf -outFolder doc -webVowl -uniteSections -rewriteAll
+  - mv doc/doc/index-en.html doc/doc/index.html
+
+  - echo "Copying results to /public for publishing..."
+  - cp -r doc/doc/* public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+
