@@ -1,9 +1,14 @@
 versions=0.1
 
-all: $(versions)
+all: base $(versions)
 widoco_jar=widoco-1.4.14-jar-with-dependencies-selfbuilt.jar
 
-.PHONY: $(versions)
+.PHONY: base $(versions)
+
+base:
+	mkdir -p public
+	cp index.html public/
+
 $(versions): % :
 	echo "Building $@..."
 	mkdir -p doc/$@
