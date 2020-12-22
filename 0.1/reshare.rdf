@@ -11,7 +11,7 @@
   xmlns:dc="http://purl.org/dc/elements/1.1/">
 
   <!-- General characteristics of the ReShare ontology -->
-  <owl:Ontology rdf:about="http://example.com/ontologies/reshare/0.1/" dc:title="ReShare vocabulary" dc:description="The ReShare (Reliable Data Sharing Through Digital Transmission contracts) vocabulary, described using W3C RDF Schema and the Web Ontology Language.">
+  <owl:Ontology rdf:about="http://example.com/ontologies/reshare/0.1/" dc:title="ReShare Vocabulary v0.1" dc:description="The ReShare (Reliable Data Sharing Through Digital Transmission contracts) vocabulary, described using W3C RDF Schema and the Web Ontology Language.">
   </owl:Ontology>  <!--TODO: change URI-->
 
   <!-- ReShare classes (types) -->
