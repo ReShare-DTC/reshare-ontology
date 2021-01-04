@@ -4,6 +4,7 @@ pages:
   stage: deploy
   only:
     - master
+    - tags
   script:
   - mkdir public
   - echo "Installing Java..."
