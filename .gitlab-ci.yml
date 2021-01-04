@@ -3,7 +3,6 @@ image: ruby:2.7
 pages:
   stage: deploy
   only:
-    - master
     - tags
   script:
   - mkdir public
