@@ -11,7 +11,7 @@
   xmlns:dc="http://purl.org/dc/elements/1.1/">
 
   <!-- General characteristics of the ReShare ontology -->
-  <owl:Ontology rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/" dc:title="ReShare Vocabulary v0.2" dc:description="The ReShare (Reliable Data Sharing Through Digital Transmission contracts) vocabulary, described using W3C RDF Schema and the Web Ontology Language." dc:language="en">
+  <owl:Ontology rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/" dc:title="ReShare Vocabulary v0.2" dc:description="The ReShare (Reliable Data Sharing Through Digital Transmission contracts) vocabulary, described using W3C RDF Schema and the Web Ontology Language." dc:language="en" owl:versionInfo="0.2" owl:priorVersion="0.1">
   </owl:Ontology>
 
   <!-- ReShare classes (types) -->
@@ -166,10 +166,14 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
     <rdfs:subPropertyOf rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#customContent" />
+    <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#DTC"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#receiverCustomContent" rdfs:label="receiver custom content" rdfs:comment="The receiver's custom content." vs:term_status="unstable">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
     <rdfs:subPropertyOf rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#customContent" />
+    <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#DTC"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </rdf:Property>
 </rdf:RDF>
