@@ -176,4 +176,10 @@
     <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#DTC"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </rdf:Property>
+  <rdf:Property rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#timestamp" rdfs:label="timestamp" rdfs:comment="The timestamp of a DTC. Should be an ISO 8601 timestamp in UTC with the xsd:dateTime type." vs:term_status="unstable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+    <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#DTC"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Property>
 </rdf:RDF>
