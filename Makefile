@@ -1,4 +1,4 @@
-versions=0.1 0.2
+versions=0.1 0.2 0.3
 
 all: base $(versions)
 widoco_jar=widoco-1.4.14-jar-with-dependencies-selfbuilt.jar
