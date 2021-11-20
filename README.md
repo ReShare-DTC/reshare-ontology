@@ -5,3 +5,11 @@
 - `v0.2`: Major redesign based on bachelor's thesis
 
 - `v0.3` (WIP): Small changes based on [W3C Member Submission Draft](https://git.rwth-aachen.de/i5/factdag/reshare-w3c-member-submission)
+
+## `v0.3` To-Dos
+
+- Implement breaking changes from W3C Member Submission Draft
+
+- Replace IRIs by w3id IRIs
+
+- Possibly revise on resource descriptions
