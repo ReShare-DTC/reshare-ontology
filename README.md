@@ -13,3 +13,5 @@
 - Replace IRIs by w3id IRIs
 
 - Possibly revise on resource descriptions
+
+- Declare term status as stable?
