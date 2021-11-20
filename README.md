@@ -8,10 +8,10 @@
 
 ## `v0.3` To-Dos
 
-- Implement breaking changes from W3C Member Submission Draft
+- [ ] Implement breaking changes from W3C Member Submission Draft
 
-- Replace IRIs by w3id IRIs
+- [ ] Replace IRIs by w3id IRIs
 
-- Possibly revise on resource descriptions
+- [ ] Possibly revise on resource descriptions
 
-- Declare term status as stable?
+- [ ] Declare term status as stable?
