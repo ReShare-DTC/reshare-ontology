@@ -8,10 +8,15 @@
 
 ## `v0.3` To-Dos
 
-- [ ] Implement breaking changes from W3C Member Submission Draft
+- [x] Implement breaking changes from W3C Member Submission Draft
+
+  - [x] Add encoding to certificates, don't assume X.509/base64
+  - [x] Add requested factID
+  - [x] Add encoding to signatures, don't assume RSASSA-PSS/base64
+  - [x] Other DTC contents
 
 - [ ] Replace IRIs by w3id IRIs
 
-- [ ] Possibly revise on resource descriptions
+- [x] Possibly revise on resource descriptions
 
-- [ ] Declare term status as stable?
+- [x] Declare term status as stable?
