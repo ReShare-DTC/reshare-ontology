@@ -20,3 +20,5 @@
 - [x] Possibly revise on resource descriptions
 
 - [x] Declare term status as stable?
+
+- [ ] Quality control and identification of potentially missing metadata based on [example ontology](https://w3id.org/example)
