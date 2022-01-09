@@ -1,6 +1,6 @@
 versions=0.1 0.2 0.3
 
-all: base $(versions)
+all: $(versions)
 widoco_url=https://github.com/dgarijo/Widoco/releases/download/v1.4.15/widoco-1.4.15-jar-with-dependencies.jar
 
 .PHONY: base $(versions)
@@ -8,11 +8,12 @@ widoco_url=https://github.com/dgarijo/Widoco/releases/download/v1.4.15/widoco-1.
 base:
 	mkdir -p public
 	cp index.html public/
+	cp -r assets public/
 
 widoco.jar:
 	wget -O widoco.jar $(widoco_url)
 
-$(versions): % : widoco.jar
+$(versions): % : widoco.jar base
 	echo "Building $@..."
 	mkdir -p doc/$@
 	java -jar widoco.jar -ontFile $@/reshare.rdf -outFolder doc/$@ -webVowl -uniteSections -rewriteAll -excludeIntroduction
