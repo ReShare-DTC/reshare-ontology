@@ -15,7 +15,7 @@
   - [x] Add encoding to signatures, don't assume RSASSA-PSS/base64
   - [x] Other DTC contents
 
-- [ ] Replace IRIs by w3id IRIs
+- [x] Replace IRIs by w3id IRIs
 
 - [x] Possibly revise on resource descriptions
 
