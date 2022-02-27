@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"
-     xml:base="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"
+<rdf:RDF xmlns="https://w3id.org/reshare/ontology/0.2/"
+     xml:base="https://w3id.org/reshare/ontology/0.2/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -8,11 +8,11 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/">
+    <owl:Ontology rdf:about="https://w3id.org/reshare/ontology/0.2/">
         <dc:description>The ReShare (Reliable Data Sharing Through Digital Transmission contracts) vocabulary, described using W3C RDF Schema and the Web Ontology Language.</dc:description>
         <dc:language>en</dc:language>
         <dc:title>ReShare Vocabulary v0.2</dc:title>
-        <owl:priorVersion>http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.1/</owl:priorVersion>
+        <owl:priorVersion>https://w3id.org/reshare/ontology/0.1/</owl:priorVersion>
         <owl:versionInfo>0.2</owl:versionInfo>
     </owl:Ontology>
     
@@ -70,109 +70,109 @@
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#fact -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#fact -->
 
 
-    <owl:ObjectProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#fact">
-        <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#DTC"/>
-        <rdfs:range rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Fact"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#fact">
+        <rdfs:domain rdf:resource="https://w3id.org/reshare/ontology/0.2/#DTC"/>
+        <rdfs:range rdf:resource="https://w3id.org/reshare/ontology/0.2/#Fact"/>
         <rdfs:comment>A fact included in a DTC.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>has fact</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#factOrigin -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#factOrigin -->
 
 
-    <owl:ObjectProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#factOrigin">
-        <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Fact"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#factOrigin">
+        <rdfs:domain rdf:resource="https://w3id.org/reshare/ontology/0.2/#Fact"/>
         <rdfs:comment>The resource which is referenced by the fact.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>fact origin</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#identifies -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#identifies -->
 
 
-    <owl:ObjectProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#identifies">
-        <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Identity"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#identifies">
+        <rdfs:domain rdf:resource="https://w3id.org/reshare/ontology/0.2/#Identity"/>
         <rdfs:comment>Links an identity of a receiver or sender as part of a contract to that entity. It is best practice to use an instance of foaf:Agent as the object to this property.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>identifies</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#receiver -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#receiver -->
 
 
-    <owl:ObjectProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#receiver">
-        <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#DTC"/>
-        <rdfs:range rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Receiver"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#receiver">
+        <rdfs:domain rdf:resource="https://w3id.org/reshare/ontology/0.2/#DTC"/>
+        <rdfs:range rdf:resource="https://w3id.org/reshare/ontology/0.2/#Receiver"/>
         <rdfs:comment>The data receiver of the underlying transmission of a DTC.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>receiver</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#receiverSig -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#receiverSig -->
 
 
-    <owl:ObjectProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#receiverSig">
-        <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#DTC"/>
-        <rdfs:range rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Signature"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#receiverSig">
+        <rdfs:domain rdf:resource="https://w3id.org/reshare/ontology/0.2/#DTC"/>
+        <rdfs:range rdf:resource="https://w3id.org/reshare/ontology/0.2/#Signature"/>
         <rdfs:comment>The contract signature created by the receiver of the DTC.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>receiver signature</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#sender -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#sender -->
 
 
-    <owl:ObjectProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#sender">
-        <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#DTC"/>
-        <rdfs:range rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Sender"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#sender">
+        <rdfs:domain rdf:resource="https://w3id.org/reshare/ontology/0.2/#DTC"/>
+        <rdfs:range rdf:resource="https://w3id.org/reshare/ontology/0.2/#Sender"/>
         <rdfs:comment>The data source (sender) of the underlying transmission of a DTC.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>sender</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#senderSig -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#senderSig -->
 
 
-    <owl:ObjectProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#senderSig">
-        <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#DTC"/>
-        <rdfs:range rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Signature"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#senderSig">
+        <rdfs:domain rdf:resource="https://w3id.org/reshare/ontology/0.2/#DTC"/>
+        <rdfs:range rdf:resource="https://w3id.org/reshare/ontology/0.2/#Signature"/>
         <rdfs:comment>The contract signature created by the sender of the DTC.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>sender signature</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#sigType -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#sigType -->
 
 
-    <owl:ObjectProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#sigType">
-        <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Signature"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#sigType">
+        <rdfs:domain rdf:resource="https://w3id.org/reshare/ontology/0.2/#Signature"/>
         <rdfs:comment>The type of a contract signature.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>signature type</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:ObjectProperty>
@@ -191,170 +191,170 @@
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#canonicalization -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#canonicalization -->
 
 
-    <owl:DatatypeProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#canonicalization">
-        <owl:equivalentProperty rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#serialization"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#canonicalization">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/reshare/ontology/0.2/#serialization"/>
         <rdfs:comment>Deprecated equivalent to the fact serialization. Kept for backwards compatibility.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>fact canonicalization</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#certEncoding -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#certEncoding -->
 
 
-    <owl:DatatypeProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#certEncoding">
-        <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Identity"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#certEncoding">
+        <rdfs:domain rdf:resource="https://w3id.org/reshare/ontology/0.2/#Identity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment>Further specification of the X509 certificate encoding. Currently specified are &apos;X509&apos;/&apos;X509-single&apos; for single certificates in ASN.1 DER notation, and &apos;PKCS7&apos;/&apos;X509-PKCS7-chain&apos; for a certificate chain encoded as a PKCS#7 message.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>X509 certificate encoding</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#customContent -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#customContent -->
 
 
-    <owl:DatatypeProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#customContent">
-        <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#DTC"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#customContent">
+        <rdfs:domain rdf:resource="https://w3id.org/reshare/ontology/0.2/#DTC"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment>The property linking a DTC to the custom content included by one of the parties. The object should be a literal with the JSON type (http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON). Abstract property, use the sub-properties instead.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>custom content</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#receiverCustomContent -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#receiverCustomContent -->
 
 
-    <owl:DatatypeProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#receiverCustomContent">
-        <rdfs:subPropertyOf rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#customContent"/>
-        <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#DTC"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#receiverCustomContent">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/reshare/ontology/0.2/#customContent"/>
+        <rdfs:domain rdf:resource="https://w3id.org/reshare/ontology/0.2/#DTC"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment>The receiver&apos;s custom content.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>receiver custom content</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#senderCustomContent -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#senderCustomContent -->
 
 
-    <owl:DatatypeProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#senderCustomContent">
-        <rdfs:subPropertyOf rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#customContent"/>
-        <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#DTC"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#senderCustomContent">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/reshare/ontology/0.2/#customContent"/>
+        <rdfs:domain rdf:resource="https://w3id.org/reshare/ontology/0.2/#DTC"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment>The sender&apos;s custom content.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>sender custom content</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#serialization -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#serialization -->
 
 
-    <owl:DatatypeProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#serialization">
-        <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Fact"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#serialization">
+        <rdfs:domain rdf:resource="https://w3id.org/reshare/ontology/0.2/#Fact"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment>The serialization method used to create a fact checksum. Should be normalized, so that checksum verification is deterministic.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>fact serialization</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#sha256Sum -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#sha256Sum -->
 
 
-    <owl:DatatypeProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#sha256Sum">
-        <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Fact"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#sha256Sum">
+        <rdfs:domain rdf:resource="https://w3id.org/reshare/ontology/0.2/#Fact"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment>A SHA-256 checksum of a fact.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>fact checksum (sha256)</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#sha384Sum -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#sha384Sum -->
 
 
-    <owl:DatatypeProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#sha384Sum">
-        <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Fact"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#sha384Sum">
+        <rdfs:domain rdf:resource="https://w3id.org/reshare/ontology/0.2/#Fact"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment>A SHA-384 checksum of a fact.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>fact checksum (sha384)</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#sha512Sum -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#sha512Sum -->
 
 
-    <owl:DatatypeProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#sha512Sum">
-        <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Fact"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#sha512Sum">
+        <rdfs:domain rdf:resource="https://w3id.org/reshare/ontology/0.2/#Fact"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment>A SHA-512 checksum of a fact.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>fact checksum (sha512)</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#sigData -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#sigData -->
 
 
-    <owl:DatatypeProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#sigData">
-        <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Signature"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#sigData">
+        <rdfs:domain rdf:resource="https://w3id.org/reshare/ontology/0.2/#Signature"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment>The signature data.</rdfs:comment>
         <rdfs:comment>The signature data. Should be encoded as base64 using the xsd:base64Binary literal type for reducing encoding overhead.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>signature data</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#timestamp -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#timestamp -->
 
 
-    <owl:DatatypeProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#timestamp">
-        <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#DTC"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#timestamp">
+        <rdfs:domain rdf:resource="https://w3id.org/reshare/ontology/0.2/#DTC"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment>The timestamp of a DTC. Should be an ISO 8601 timestamp in UTC with the xsd:dateTime type.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>timestamp</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#x509Cert -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#x509Cert -->
 
 
-    <owl:DatatypeProperty rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#x509Cert">
-        <rdfs:domain rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Identity"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/reshare/ontology/0.2/#x509Cert">
+        <rdfs:domain rdf:resource="https://w3id.org/reshare/ontology/0.2/#Identity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment>The X.509 certificate of a transmission party. Should be the full certificate chain,     excluding the root certificate, encoded as base64 using the xsd:base64Binary literal type. Further encoding is specified in the certEncoding property.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>X509 certificate</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:DatatypeProperty>
@@ -373,74 +373,74 @@
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#DTC -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#DTC -->
 
 
-    <owl:Class rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#DTC">
+    <owl:Class rdf:about="https://w3id.org/reshare/ontology/0.2/#DTC">
         <rdfs:comment>A Digital Transmisson Contract (DTC), used to create data immutability through bilateral signatures.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>Digital Transmission Contract</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:Class>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Fact -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#Fact -->
 
 
-    <owl:Class rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Fact">
+    <owl:Class rdf:about="https://w3id.org/reshare/ontology/0.2/#Fact">
         <rdfs:comment>A resource checksum which is included in a DTC.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>Fact</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:Class>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Identity -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#Identity -->
 
 
-    <owl:Class rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Identity">
+    <owl:Class rdf:about="https://w3id.org/reshare/ontology/0.2/#Identity">
         <rdfs:comment>An identity of a transmission party.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>Identity</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:Class>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Receiver -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#Receiver -->
 
 
-    <owl:Class rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Receiver">
-        <rdfs:subClassOf rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Identity"/>
+    <owl:Class rdf:about="https://w3id.org/reshare/ontology/0.2/#Receiver">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/reshare/ontology/0.2/#Identity"/>
         <rdfs:comment>The receiver of a transmission.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>Receiver</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:Class>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Sender -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#Sender -->
 
 
-    <owl:Class rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Sender">
-        <rdfs:subClassOf rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Identity"/>
+    <owl:Class rdf:about="https://w3id.org/reshare/ontology/0.2/#Sender">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/reshare/ontology/0.2/#Identity"/>
         <rdfs:comment>The data source (sender) of a transmission.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>Sender</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:Class>
     
 
 
-    <!-- http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Signature -->
+    <!-- https://w3id.org/reshare/ontology/0.2/#Signature -->
 
 
-    <owl:Class rdf:about="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/#Signature">
+    <owl:Class rdf:about="https://w3id.org/reshare/ontology/0.2/#Signature">
         <rdfs:comment>A contract signature created by one of the transmission parties.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.2/"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/reshare/ontology/0.2/"/>
         <rdfs:label>Signature</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:Class>

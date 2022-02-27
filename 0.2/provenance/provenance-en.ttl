@@ -5,5 +5,5 @@
 <..\index-en.html> a prov:Entity;
 	 dc:title "ReShare Vocabulary v0.2";
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:wasRevisionOf <http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.1/>;
+	 prov:wasRevisionOf <https://w3id.org/reshare/ontology/0.1/>;
 .
