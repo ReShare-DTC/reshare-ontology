@@ -52,13 +52,13 @@
     "id" : "14",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "17",
+    "id" : "15",
     "type" : "owl:Class"
   }, {
     "id" : "18",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "16",
+    "id" : "17",
     "type" : "rdfs:Literal"
   }, {
     "id" : "2",
@@ -76,10 +76,10 @@
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "7",
+    "id" : "9",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "26",
+    "id" : "25",
     "type" : "owl:Class"
   }, {
     "id" : "28",
@@ -94,7 +94,7 @@
     "id" : "13",
     "type" : "owl:Thing"
   }, {
-    "id" : "9",
+    "id" : "7",
     "type" : "owl:Thing"
   }, {
     "id" : "31",
@@ -182,7 +182,7 @@
     "comment" : {
       "undefined" : "A contract signature created by one of the transmission parties."
     },
-    "id" : "17"
+    "id" : "15"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
@@ -194,7 +194,7 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "16",
+    "id" : "17",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -279,7 +279,7 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "7",
+    "id" : "9",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -309,7 +309,7 @@
     "comment" : {
       "undefined" : "A Digital Transmisson Contract (DTC), used to create data immutability through bilateral signatures."
     },
-    "id" : "26"
+    "id" : "25"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
@@ -362,7 +362,7 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "9",
+    "id" : "7",
     "label" : {
       "undefined" : "Thing"
     }
@@ -396,15 +396,15 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "6",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "8",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "12",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "15",
+    "id" : "16",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "19",
@@ -414,10 +414,10 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "24",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "25",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "27",
     "type" : "owl:datatypeProperty"
@@ -493,37 +493,9 @@
     "attributes" : [ "datatype" ],
     "id" : "0"
   }, {
-    "iri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/#certEncoding",
-    "baseIri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/",
-    "range" : "7",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "certEncoding",
-      "undefined" : "certificate encoding"
-    },
-    "domain" : "3",
-    "comment" : {
-      "undefined" : "Encoding of the (binary) certificate data object to the x509Cert property. 'base64' is considered the default value, expressing that the (binary) certificate data which is object to the x509Cert property is encoded using Base64."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "6"
-  }, {
     "iri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/#identifies",
     "baseIri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/",
-    "range" : "9",
+    "range" : "7",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -547,6 +519,34 @@
       "undefined" : "Links an identity of a receiver or sender as part of a contract to that entity. It is best practice to use an instance of foaf:Agent as the object to this property."
     },
     "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/#certEncoding",
+    "baseIri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "certEncoding",
+      "undefined" : "certificate encoding"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "Encoding of the (binary) certificate data object to the x509Cert property. 'base64' is considered the default value, expressing that the (binary) certificate data which is object to the x509Cert property is encoded using Base64."
+    },
+    "attributes" : [ "datatype" ],
     "id" : "8"
   }, {
     "iri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/#factOrigin",
@@ -579,7 +579,7 @@
   }, {
     "iri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/#sha256Sum",
     "baseIri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/",
-    "range" : "16",
+    "range" : "17",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -603,7 +603,7 @@
       "undefined" : "A SHA-256 checksum of a fact. Should be encoded as a hex stream using the xsd:hexBinary literal type."
     },
     "attributes" : [ "datatype" ],
-    "id" : "15"
+    "id" : "16"
   }, {
     "iri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/#x509Cert",
     "baseIri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/",
@@ -661,6 +661,34 @@
     "attributes" : [ "datatype" ],
     "id" : "23"
   }, {
+    "iri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/#senderSig",
+    "baseIri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/",
+    "range" : "15",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "senderSig",
+      "undefined" : "sender signature"
+    },
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "The contract signature created by the sender of the DTC."
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
     "iri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/#sha512Sum",
     "baseIri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/",
     "range" : "21",
@@ -687,35 +715,7 @@
       "undefined" : "A SHA-512 checksum of a fact. Should be encoded as a hex stream using the xsd:hexBinary literal type."
     },
     "attributes" : [ "datatype" ],
-    "id" : "24"
-  }, {
-    "iri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/#senderSig",
-    "baseIri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/",
-    "range" : "17",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "senderSig",
-      "undefined" : "sender signature"
-    },
-    "domain" : "26",
-    "comment" : {
-      "undefined" : "The contract signature created by the sender of the DTC."
-    },
-    "attributes" : [ "object" ],
-    "id" : "25"
+    "id" : "26"
   }, {
     "iri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/#senderCustomContent",
     "baseIri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/",
@@ -738,7 +738,7 @@
       "IRI-based" : "senderCustomContent",
       "undefined" : "sender custom content"
     },
-    "domain" : "26",
+    "domain" : "25",
     "comment" : {
       "undefined" : "The sender's custom content."
     },
@@ -766,7 +766,7 @@
       "IRI-based" : "sender",
       "undefined" : "sender"
     },
-    "domain" : "26",
+    "domain" : "25",
     "comment" : {
       "undefined" : "The data source (sender) of the underlying transmission of a DTC."
     },
@@ -794,7 +794,7 @@
       "IRI-based" : "sigEncoding",
       "undefined" : "signature encoding"
     },
-    "domain" : "17",
+    "domain" : "15",
     "comment" : {
       "undefined" : "The signature encoding. 'base64' is considered the default value, expressing that the (binary) signature data which is object to the sigData property is encoded using Base64."
     },
@@ -822,7 +822,7 @@
       "IRI-based" : "sigData",
       "undefined" : "signature data"
     },
-    "domain" : "17",
+    "domain" : "15",
     "comment" : {
       "undefined" : "The signature data, encoded as a character sequence. More information about the type and encoding can be provided with the sigType and sigEncoding properties. If Base64 is used for the character encoding, the literal type should be xsd:base64Binary."
     },
@@ -878,7 +878,7 @@
       "IRI-based" : "receiverCustomContent",
       "undefined" : "receiver custom content"
     },
-    "domain" : "26",
+    "domain" : "25",
     "comment" : {
       "undefined" : "The receiver's custom content."
     },
@@ -906,7 +906,7 @@
       "IRI-based" : "receiver",
       "undefined" : "receiver"
     },
-    "domain" : "26",
+    "domain" : "25",
     "comment" : {
       "undefined" : "The data receiver of the underlying transmission of a DTC."
     },
@@ -962,7 +962,7 @@
       "IRI-based" : "sigType",
       "undefined" : "signature type"
     },
-    "domain" : "17",
+    "domain" : "15",
     "comment" : {
       "undefined" : "The type of a contract signature. The object should be an OID URN to a cryptographic signature scheme. As of now, 'urn:oid:1.2.840.113549.1.1.10' is considered the default value, identifying the RSASSA-PSS signature scheme as specified in PKCS #1 v2.2."
     },
@@ -971,7 +971,7 @@
   }, {
     "iri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/#receiverSig",
     "baseIri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/",
-    "range" : "17",
+    "range" : "15",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -990,7 +990,7 @@
       "IRI-based" : "receiverSig",
       "undefined" : "receiver signature"
     },
-    "domain" : "26",
+    "domain" : "25",
     "comment" : {
       "undefined" : "The contract signature created by the receiver of the DTC."
     },
@@ -1018,7 +1018,7 @@
       "IRI-based" : "timestamp",
       "undefined" : "timestamp"
     },
-    "domain" : "26",
+    "domain" : "25",
     "comment" : {
       "undefined" : "The timestamp of a DTC. Should be in the RFC3339 profile of ISO 8601, and should have the xsd:dateTimeStamp literal type."
     },
@@ -1027,7 +1027,7 @@
   }, {
     "range" : "3",
     "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "42"
   }, {
     "iri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/#customContent",
@@ -1051,7 +1051,7 @@
       "IRI-based" : "customContent",
       "undefined" : "custom content"
     },
-    "domain" : "26",
+    "domain" : "25",
     "comment" : {
       "undefined" : "The property linking a DTC to the custom content included by one of the parties. The object should be a literal with the JSON type (http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON). Abstract property, use the sub-properties instead."
     },
@@ -1060,7 +1060,7 @@
   }, {
     "range" : "3",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "44"
   }, {
     "iri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.3/#fact",
@@ -1084,7 +1084,7 @@
       "IRI-based" : "fact",
       "undefined" : "has fact"
     },
-    "domain" : "26",
+    "domain" : "25",
     "comment" : {
       "undefined" : "A fact included in a DTC."
     },

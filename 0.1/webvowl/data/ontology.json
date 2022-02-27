@@ -440,34 +440,6 @@
     "attributes" : [ "datatype" ],
     "id" : "16"
   }, {
-    "iri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.1/#sender",
-    "baseIri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.1/",
-    "range" : "13",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.1/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "unstable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "sender",
-      "undefined" : "sender"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The data source (sender) of the underlying transmission of a DTC."
-    },
-    "attributes" : [ "object" ],
-    "id" : "18"
-  }, {
     "iri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.1/#senderSig",
     "baseIri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.1/",
     "range" : "7",
@@ -492,6 +464,34 @@
     "domain" : "1",
     "comment" : {
       "undefined" : "The contract signature created by the sender of the DTC."
+    },
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.1/#sender",
+    "baseIri" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.1/",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://i5.pages.rwth-aachen.de/factdag/reshare-ontology/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sender",
+      "undefined" : "sender"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The data source (sender) of the underlying transmission of a DTC."
     },
     "attributes" : [ "object" ],
     "id" : "19"
