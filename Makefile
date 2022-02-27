@@ -11,7 +11,7 @@ base:
 	cp -r assets public/
 
 widoco.jar:
-	wget -O widoco.jar $(widoco_url)
+	wget -q -O widoco.jar $(widoco_url)
 
 $(versions): % : widoco.jar base
 	echo "Building $@..."
