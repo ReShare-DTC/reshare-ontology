@@ -24,7 +24,7 @@
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "2",
+    "id" : "4",
     "type" : "owl:Class"
   }, {
     "id" : "7",
@@ -57,7 +57,7 @@
     "id" : "6",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "4",
+    "id" : "2",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -111,7 +111,7 @@
     "comment" : {
       "undefined" : "The data source (sender) of a transmission."
     },
-    "id" : "2",
+    "id" : "4",
     "superClasses" : [ "6" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -128,7 +128,7 @@
     "label" : {
       "IRI-based" : "Agent"
     },
-    "attributes" : [ "external", "equivalent" ],
+    "attributes" : [ "equivalent", "external" ],
     "id" : "8"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -244,7 +244,7 @@
       "IRI-based" : "Identity",
       "undefined" : "Identity"
     },
-    "subClasses" : [ "13", "2" ],
+    "subClasses" : [ "13", "4" ],
     "comment" : {
       "undefined" : "An identity of a transmission peer."
     },
@@ -275,7 +275,7 @@
     "comment" : {
       "undefined" : "A contract signature created by one of the transmission peers."
     },
-    "id" : "4"
+    "id" : "2"
   } ],
   "property" : [ {
     "id" : "0",
@@ -297,10 +297,10 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "16",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "17",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "18",
     "type" : "owl:objectProperty"
@@ -318,37 +318,9 @@
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "https://w3id.org/reshare/ontology/0.1/#sender",
-    "baseIri" : "https://w3id.org/reshare/ontology/0.1/",
-    "range" : "2",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/reshare/ontology/0.1/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "unstable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "sender",
-      "undefined" : "sender"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The data source (sender) of the underlying transmission of a DTC."
-    },
-    "attributes" : [ "object" ],
-    "id" : "0"
-  }, {
     "iri" : "https://w3id.org/reshare/ontology/0.1/#receiverSig",
     "baseIri" : "https://w3id.org/reshare/ontology/0.1/",
-    "range" : "4",
+    "range" : "2",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -372,11 +344,39 @@
       "undefined" : "The contract signature created by the receiver of the DTC."
     },
     "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/reshare/ontology/0.1/#sender",
+    "baseIri" : "https://w3id.org/reshare/ontology/0.1/",
+    "range" : "4",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/reshare/ontology/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sender",
+      "undefined" : "sender"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The data source (sender) of the underlying transmission of a DTC."
+    },
+    "attributes" : [ "object" ],
     "id" : "3"
   }, {
     "iri" : "https://w3id.org/reshare/ontology/0.1/#senderSig",
     "baseIri" : "https://w3id.org/reshare/ontology/0.1/",
-    "range" : "4",
+    "range" : "2",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -404,12 +404,12 @@
   }, {
     "range" : "6",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "12"
   }, {
     "range" : "6",
-    "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "14"
   }, {
     "iri" : "https://w3id.org/reshare/ontology/0.1/#sigData",
@@ -433,40 +433,12 @@
       "IRI-based" : "sigData",
       "undefined" : "signature data"
     },
-    "domain" : "4",
+    "domain" : "2",
     "comment" : {
       "undefined" : "The signature data."
     },
     "attributes" : [ "datatype" ],
     "id" : "15"
-  }, {
-    "iri" : "https://w3id.org/reshare/ontology/0.1/#receiver",
-    "baseIri" : "https://w3id.org/reshare/ontology/0.1/",
-    "range" : "13",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/reshare/ontology/0.1/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "unstable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "receiver",
-      "undefined" : "receiver"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The data receiver of the underlying transmission of a DTC."
-    },
-    "attributes" : [ "object" ],
-    "id" : "16"
   }, {
     "iri" : "https://w3id.org/reshare/ontology/0.1/#x509Cert",
     "baseIri" : "https://w3id.org/reshare/ontology/0.1/",
@@ -494,6 +466,34 @@
       "undefined" : "The X.509 certificate of a transmission peer."
     },
     "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/reshare/ontology/0.1/#receiver",
+    "baseIri" : "https://w3id.org/reshare/ontology/0.1/",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/reshare/ontology/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "receiver",
+      "undefined" : "receiver"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The data receiver of the underlying transmission of a DTC."
+    },
+    "attributes" : [ "object" ],
     "id" : "17"
   }, {
     "iri" : "https://w3id.org/reshare/ontology/0.1/#hasFact",
@@ -601,7 +601,7 @@
       "IRI-based" : "sigType",
       "undefined" : "signature type"
     },
-    "domain" : "4",
+    "domain" : "2",
     "comment" : {
       "undefined" : "The type of a contract signature."
     },

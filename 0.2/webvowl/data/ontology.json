@@ -46,7 +46,7 @@
     "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
+    "id" : "7",
     "type" : "rdfs:Literal"
   }, {
     "id" : "4",
@@ -76,13 +76,13 @@
     "id" : "29",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "13",
+    "id" : "11",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "11",
+    "id" : "13",
     "type" : "owl:Class"
   }, {
-    "id" : "7",
+    "id" : "5",
     "type" : "owl:Class"
   }, {
     "id" : "9",
@@ -97,7 +97,7 @@
     "id" : "41",
     "type" : "owl:Thing"
   }, {
-    "id" : "34",
+    "id" : "33",
     "type" : "rdfs:Literal"
   }, {
     "id" : "24",
@@ -158,11 +158,11 @@
       "undefined" : "The data source (sender) of a transmission."
     },
     "id" : "2",
-    "superClasses" : [ "7" ]
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "6",
+    "id" : "7",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -249,7 +249,7 @@
       "undefined" : "The receiver of a transmission."
     },
     "id" : "22",
-    "superClasses" : [ "7" ]
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
@@ -261,7 +261,7 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "13",
+    "id" : "11",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -291,7 +291,7 @@
     "comment" : {
       "undefined" : "A resource checksum which is included in a DTC."
     },
-    "id" : "11"
+    "id" : "13"
   }, {
     "iri" : "https://w3id.org/reshare/ontology/0.2/#Identity",
     "baseIri" : "https://w3id.org/reshare/ontology/0.2/",
@@ -318,7 +318,7 @@
     "comment" : {
       "undefined" : "An identity of a transmission party."
     },
-    "id" : "7"
+    "id" : "5"
   }, {
     "iri" : "https://w3id.org/reshare/ontology/0.2/#Signature",
     "baseIri" : "https://w3id.org/reshare/ontology/0.2/",
@@ -369,7 +369,7 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "34",
+    "id" : "33",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -396,17 +396,17 @@
     "id" : "3",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "5",
+    "id" : "6",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "8",
     "type" : "owl:objectProperty"
   }, {
     "id" : "10",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "12",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "18",
     "type" : "owl:datatypeProperty"
@@ -426,13 +426,13 @@
     "id" : "31",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "28",
+    "type" : "owl:datatypeProperty"
+  }, {
     "id" : "32",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "33",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "28",
+    "id" : "34",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "35",
@@ -515,7 +515,7 @@
   }, {
     "iri" : "https://w3id.org/reshare/ontology/0.2/#receiverCustomContent",
     "baseIri" : "https://w3id.org/reshare/ontology/0.2/",
-    "range" : "6",
+    "range" : "7",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -539,7 +539,7 @@
       "undefined" : "The receiver's custom content."
     },
     "attributes" : [ "datatype" ],
-    "id" : "5"
+    "id" : "6"
   }, {
     "iri" : "https://w3id.org/reshare/ontology/0.2/#senderSig",
     "baseIri" : "https://w3id.org/reshare/ontology/0.2/",
@@ -569,37 +569,9 @@
     "attributes" : [ "object" ],
     "id" : "8"
   }, {
-    "iri" : "https://w3id.org/reshare/ontology/0.2/#fact",
-    "baseIri" : "https://w3id.org/reshare/ontology/0.2/",
-    "range" : "11",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/reshare/ontology/0.2/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "unstable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "fact",
-      "undefined" : "has fact"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "A fact included in a DTC."
-    },
-    "attributes" : [ "object" ],
-    "id" : "10"
-  }, {
     "iri" : "https://w3id.org/reshare/ontology/0.2/#customContent",
     "baseIri" : "https://w3id.org/reshare/ontology/0.2/",
-    "range" : "13",
+    "range" : "11",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -623,6 +595,34 @@
       "undefined" : "The property linking a DTC to the custom content included by one of the parties. The object should be a literal with the JSON type (http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON). Abstract property, use the sub-properties instead."
     },
     "attributes" : [ "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/reshare/ontology/0.2/#fact",
+    "baseIri" : "https://w3id.org/reshare/ontology/0.2/",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/reshare/ontology/0.2/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "fact",
+      "undefined" : "has fact"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "A fact included in a DTC."
+    },
+    "attributes" : [ "object" ],
     "id" : "12"
   }, {
     "iri" : "https://w3id.org/reshare/ontology/0.2/#sigData",
@@ -648,7 +648,7 @@
     },
     "domain" : "9",
     "comment" : {
-      "undefined" : "The signature data."
+      "undefined" : "The signature data. Should be encoded as base64 using the xsd:base64Binary literal type for reducing encoding overhead."
     },
     "attributes" : [ "datatype" ],
     "id" : "18"
@@ -702,7 +702,7 @@
       "IRI-based" : "identifies",
       "undefined" : "identifies"
     },
-    "domain" : "7",
+    "domain" : "5",
     "comment" : {
       "undefined" : "Links an identity of a receiver or sender as part of a contract to that entity. It is best practice to use an instance of foaf:Agent as the object to this property."
     },
@@ -759,7 +759,7 @@
       "IRI-based" : "sha384Sum",
       "undefined" : "fact checksum (sha384)"
     },
-    "domain" : "11",
+    "domain" : "13",
     "comment" : {
       "undefined" : "A SHA-384 checksum of a fact."
     },
@@ -787,68 +787,12 @@
       "IRI-based" : "sha256Sum",
       "undefined" : "fact checksum (sha256)"
     },
-    "domain" : "11",
+    "domain" : "13",
     "comment" : {
       "undefined" : "A SHA-256 checksum of a fact."
     },
     "attributes" : [ "datatype" ],
     "id" : "31"
-  }, {
-    "iri" : "https://w3id.org/reshare/ontology/0.2/#sha512Sum",
-    "baseIri" : "https://w3id.org/reshare/ontology/0.2/",
-    "range" : "17",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/reshare/ontology/0.2/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "unstable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "sha512Sum",
-      "undefined" : "fact checksum (sha512)"
-    },
-    "domain" : "11",
-    "comment" : {
-      "undefined" : "A SHA-512 checksum of a fact."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "32"
-  }, {
-    "iri" : "https://w3id.org/reshare/ontology/0.2/#x509Cert",
-    "baseIri" : "https://w3id.org/reshare/ontology/0.2/",
-    "range" : "34",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/reshare/ontology/0.2/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "unstable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "x509Cert",
-      "undefined" : "X509 certificate"
-    },
-    "domain" : "7",
-    "comment" : {
-      "undefined" : "The X.509 certificate of a transmission party. Should be the full certificate chain,     excluding the root certificate, encoded as base64 using the xsd:base64Binary literal type. Further encoding is specified in the certEncoding property."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "33"
   }, {
     "iri" : "https://w3id.org/reshare/ontology/0.2/#serialization",
     "equivalent" : [ "25" ],
@@ -872,12 +816,68 @@
       "IRI-based" : "serialization",
       "undefined" : "fact serialization"
     },
-    "domain" : "11",
+    "domain" : "13",
     "comment" : {
       "undefined" : "The serialization method used to create a fact checksum. Should be normalized, so that checksum verification is deterministic."
     },
     "attributes" : [ "datatype" ],
     "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/reshare/ontology/0.2/#x509Cert",
+    "baseIri" : "https://w3id.org/reshare/ontology/0.2/",
+    "range" : "33",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/reshare/ontology/0.2/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "x509Cert",
+      "undefined" : "X509 certificate"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "The X.509 certificate of a transmission party. Should be the full certificate chain,     excluding the root certificate, encoded as base64 using the xsd:base64Binary literal type. Further encoding is specified in the certEncoding property."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/reshare/ontology/0.2/#sha512Sum",
+    "baseIri" : "https://w3id.org/reshare/ontology/0.2/",
+    "range" : "17",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/reshare/ontology/0.2/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sha512Sum",
+      "undefined" : "fact checksum (sha512)"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "A SHA-512 checksum of a fact."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "34"
   }, {
     "iri" : "https://w3id.org/reshare/ontology/0.2/#factOrigin",
     "baseIri" : "https://w3id.org/reshare/ontology/0.2/",
@@ -900,7 +900,7 @@
       "IRI-based" : "factOrigin",
       "undefined" : "fact origin"
     },
-    "domain" : "11",
+    "domain" : "13",
     "comment" : {
       "undefined" : "The resource which is referenced by the fact."
     },
@@ -928,7 +928,7 @@
       "IRI-based" : "certEncoding",
       "undefined" : "X509 certificate encoding"
     },
-    "domain" : "7",
+    "domain" : "5",
     "comment" : {
       "undefined" : "Further specification of the X509 certificate encoding. Currently specified are 'X509'/'X509-single' for single certificates in ASN.1 DER notation, and 'PKCS7'/'X509-PKCS7-chain' for a certificate chain encoded as a PKCS#7 message."
     },
@@ -963,7 +963,7 @@
     "attributes" : [ "datatype" ],
     "id" : "38"
   }, {
-    "range" : "7",
+    "range" : "5",
     "domain" : "22",
     "attributes" : [ "object", "anonymous" ],
     "id" : "39"
@@ -996,7 +996,7 @@
     "attributes" : [ "object" ],
     "id" : "40"
   }, {
-    "range" : "7",
+    "range" : "5",
     "domain" : "2",
     "attributes" : [ "object", "anonymous" ],
     "id" : "42"
